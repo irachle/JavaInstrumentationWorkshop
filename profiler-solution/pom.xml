@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>profiler</artifactId>
+    <artifactId>profiler-solution</artifactId>
 
     <properties>
         <javaassist.version>3.25.0-GA</javaassist.version>
@@ -36,12 +36,12 @@
                     </descriptorRefs>
                     <archive>
                         <manifestEntries>
-                            <Main-Class>irach.demo.profiler.Profiler</Main-Class>
-                            <Premain-Class>irach.demo.profiler.Profiler</Premain-Class>
-                            <Agent-Class>irach.demo.profiler.Profiler</Agent-Class>
+                            <Main-Class>irach.demo.profiler_solution.Profiler</Main-Class>
+                            <Premain-Class>irach.demo.profiler_solution.Profiler</Premain-Class>
+                            <Agent-Class>irach.demo.profiler_solution.Profiler</Agent-Class>
                             <Can-Redefine-Classes>true</Can-Redefine-Classes>
                             <Can-Retransform-Classes>true</Can-Retransform-Classes>
-                            <Boot-Class-Path>profiler-1.0-jar-with-dependencies.jar</Boot-Class-Path>
+                            <Boot-Class-Path>profiler-solution-1.0-jar-with-dependencies.jar</Boot-Class-Path>
                         </manifestEntries>
                     </archive>
                 </configuration>

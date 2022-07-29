@@ -1,4 +1,4 @@
-package irach.demo.profiler;
+package irach.demo.profiler_solution;
 
 import javassist.ClassPool;
 import javassist.CtClass;
@@ -13,7 +13,7 @@ import java.security.ProtectionDomain;
  * This is where you implement addition of new code.
  */
 
-public class LogTransformer implements ClassFileTransformer
+public class LogTransformer2 implements ClassFileTransformer
 {
     private static final String CLASS_TO_INSTRUMENT = "java.util.logging.Logger";
     private static final String TRANSFORM_METHOD = "log";
@@ -39,24 +39,14 @@ public class LogTransformer implements ClassFileTransformer
                 return byteCode;
             }
 
-            // Add code to the beginning of a method
-            method.addLocalVariable("startTime", CtClass.longType);
-            method.insertBefore( "startTime = System.currentTimeMillis();");
-
-            // Add code to the end of a method
-            StringBuilder endBlock = new StringBuilder();
-            method.addLocalVariable("endTime", CtClass.longType);
-            method.addLocalVariable("opTime", CtClass.longType);
-            endBlock.append("endTime = System.currentTimeMillis();");
-            endBlock.append("opTime = endTime - startTime;");
-            endBlock.append("System.out.println(\"[Added by Agent] operation time: \" + opTime + \" miliseconds!\");");
-            method.insertAfter(endBlock.toString());
+            method.insertAfter("irach.demo.profiler_solution.LogProfiler.$_INSTANCE.logMethodCalled();");
 
             byteCode = cc.toBytecode();
             cc.detach();
         }
         catch (Exception e)
         {
+            System.out.println("Exception during retransform: " + e.getMessage());
         }
 
         return byteCode;
