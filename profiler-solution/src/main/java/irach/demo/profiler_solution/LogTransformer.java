@@ -1,4 +1,4 @@
-package irach.demo.profiler;
+package irach.demo.profiler_solution;
 
 import javassist.ClassPool;
 import javassist.CtClass;

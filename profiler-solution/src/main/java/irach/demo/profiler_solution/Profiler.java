@@ -1,4 +1,4 @@
-package irach.demo.profiler;
+package irach.demo.profiler_solution;
 
 import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.Instrumentation;
@@ -17,7 +17,7 @@ public class Profiler
 
   private static void transformClass(Instrumentation instrumentation)
   {
-    ClassFileTransformer logTransformer = new LogTransformer();
+    ClassFileTransformer logTransformer = new LogTransformer2();
     instrumentation.addTransformer(logTransformer, true);
   }
 }

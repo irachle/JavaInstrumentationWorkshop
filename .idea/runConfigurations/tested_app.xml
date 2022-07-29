@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="tested-app" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="irach.demo.tested_app.JustApp" />
+    <module name="tested-app" />
+    <option name="VM_PARAMETERS" value="-javaagent:./profiler/target/profiler-1.0-jar-with-dependencies.jar " />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
