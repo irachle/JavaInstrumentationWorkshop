@@ -21,7 +21,8 @@ There are three modules this project:
       It instruments the java.util.logging.Logger.log using JavaAssist.
 
 4. riddles folder \
-    The riddles folder contains two riddles that can be solved using the profiler.
+    The riddles folder contains two riddles that can be solved using the profiler. 
+    You can find there a `README` file with the run instructions. 
 
 Test and run the profiler
 -------------------------
@@ -36,29 +37,4 @@ java -jar ./tested-app/target/tested-app-1.0.jar
 To execute the tested app with the profiler run
 ```shell
 java -javaagent:./profiler/target/profiler-1.0-jar-with-dependencies.jar -jar ./tested-app/target/tested-app-1.0.jar
-```
-
-Running the profiler with the riddles
-------------------
-In the riddles folder you can find two riddles. \
-The order you should solve them is:
-1. StartHere-1.jar
-2. ShiftingNext-2.jar
-
-To run the first riddle without the profiler use:
-```shell
-java -jar ./riddles/StartHere-1.jar
-```
-and with the profiler:
-```shell
-java -javaagent:./profiler/target/profiler-1.0-jar-with-dependencies.jar -jar ./riddles/StartHere-1.jar
-```
-\
-To run the second riddle without the profiler use:
-```shell
-java -jar ./riddles/ShiftingNext-2.jar
-```
-and with the profiler:
-```shell
-java -javaagent:./profiler/target/profiler-1.0-jar-with-dependencies.jar -jar ./riddles/ShiftingNext-2.jar
 ```
