@@ -57,6 +57,7 @@ public class LogTransformer implements ClassFileTransformer
         }
         catch (Exception e)
         {
+            System.out.println("Exception during retransform: " + e.getMessage());
         }
 
         return byteCode;

@@ -9,9 +9,16 @@ public class JustApp
 
     public static void main(String[] args)
     {
-        for (int i = 0; i < 5; i++)
+        try
         {
-            logger.log(Level.INFO, "My log message");
+            for (int i = 0; i < 5; i++)
+            {
+                logger.log(Level.INFO, "My log message");
+            }
+        }
+        catch (Exception ex)
+        {
+            System.out.println("Error in application: " + ex.getMessage());
         }
     }
 }
