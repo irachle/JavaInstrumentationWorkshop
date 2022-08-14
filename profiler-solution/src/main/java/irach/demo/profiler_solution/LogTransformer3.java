@@ -59,7 +59,7 @@ public class LogTransformer3 implements ClassFileTransformer
         }
         catch (Exception e)
         {
-            System.out.println("[Agent] failed to modify class: " + e.getMessage());
+            System.out.println("Exception during retransform: " + e.getMessage());
         }
 
         return byteCode;
