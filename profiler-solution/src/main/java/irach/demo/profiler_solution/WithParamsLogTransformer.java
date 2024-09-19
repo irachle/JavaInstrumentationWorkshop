@@ -22,7 +22,7 @@ import java.security.ProtectionDomain;
  *    Look in the java.util.logging.Logger to get more information
 **/
 
-public class LogTransformer3 implements ClassFileTransformer
+public class WithParamsLogTransformer implements ClassFileTransformer
 {
     private static final String CLASS_TO_INSTRUMENT = "java.util.logging.Logger";
     private static final String TRANSFORM_METHOD = "log";
