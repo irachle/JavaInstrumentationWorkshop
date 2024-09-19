@@ -3,7 +3,9 @@ Java code introduction for beginners workshop.
 ---------------------
 This is the code for the exercise in Java code introduction for beginners workshop.
 The exercise is to build a simple profiler in java to test and see how instrumentation in java using works.  
-The workshop is presented in [DevConf.us 2022](http://devconf.us/).
+
+The workshop was presented in [DevConf.us 2022](http://devconf.us/). \
+Then it transformed to **Interactive Application Security Testing (IAST) - Under the hood** workshop in [Hackeriot 2024](https://www.hackeriot.org/)
 *** 
 
 There are three modules this project:
@@ -24,6 +26,15 @@ There are three modules this project:
     The riddles folder contains two riddles that can be solved using the profiler. 
     You can find there a `README` file with the run instructions. 
 
+Prepare work environment with Maven and IDE 
+--------------------------------------------
+To prepare your work environment, follow these steps:
+1. IDE. \
+   If you don't have a preferred working IDE, download and install [Intellij](https://www.jetbrains.com/idea/download/) Community Edition for free.
+2. Maven \
+   Download Maven, the build tool used in this project, from [here](https://maven.apache.org/download.cgi) and extract it to a folder (no installation required).
+
+
 Test and run the profiler
 -------------------------
 Build the project 
@@ -38,3 +49,4 @@ To execute the tested app with the profiler run
 ```shell
 java -javaagent:./profiler/target/profiler-1.0-jar-with-dependencies.jar -jar ./tested-app/target/tested-app-1.0.jar
 ```
+

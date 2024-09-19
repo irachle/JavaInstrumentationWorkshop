@@ -13,7 +13,7 @@ import java.security.ProtectionDomain;
  * This is where you implement addition of new code.
  */
 
-public class LogTransformer2 implements ClassFileTransformer
+public class WithCountLogTransformer implements ClassFileTransformer
 {
     private static final String CLASS_TO_INSTRUMENT = "java.util.logging.Logger";
     private static final String TRANSFORM_METHOD = "log";

@@ -17,7 +17,7 @@ public class Profiler
 
   private static void transformClass(Instrumentation instrumentation)
   {
-    ClassFileTransformer logTransformer = new LogTransformer3();
+    ClassFileTransformer logTransformer = new WithParamsLogTransformer();
     instrumentation.addTransformer(logTransformer, true);
   }
 }
