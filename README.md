@@ -32,7 +32,10 @@ To prepare your work environment, follow these steps:
 1. IDE. \
    If you don't have a preferred working IDE, download and install [Intellij](https://www.jetbrains.com/idea/download/) Community Edition for free.
 2. Maven \
-   Download Maven, the build tool used in this project, from [here](https://maven.apache.org/download.cgi) and extract it to a folder (no installation required).
+   Download Maven, the build tool used in this project, from [here](https://maven.apache.org/download.cgi) and extract it to a folder (no installation required). 
+   Then, add the maven/build folder to the PATH variable.
+3. JDK \
+   If you don't have a JDK installed, download any version of JDK. The project was tested with JDK 1.8 and JDK 23. You can use IntelliJ to download the JDK by following the steps explained [here](https://www.jetbrains.com/help/idea/sdk.html#set-up-jdk).
 
 
 Test and run the profiler
