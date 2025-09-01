@@ -76,12 +76,12 @@ Build the project
 ```shell
 mvn install
 ```
-\
+
 To execute the tested app without the profiler run
 ```shell
 java -jar ./tested-app/target/tested-app-1.0.jar
 ```
-\
+
 To execute the tested app with the profiler run
 ```shell
 java -javaagent:./profiler/target/profiler-1.0-jar-with-dependencies.jar -jar ./tested-app/target/tested-app-1.0.jar

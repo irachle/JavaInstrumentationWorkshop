@@ -18,14 +18,14 @@
 
 
 	// Configure tool-specific properties.
-    "customizations" : {
-	  "jetbrains" : {
-	    "backend" : "IntelliJ"
+    "customizations": {
+	  "jetbrains": {
+	    "backend": "IntelliJ"
 	  },
 	  "vscode": {
 	    "extensions": [
 		    "vscjava.vscode-java-pack"
 	    ]
-	  },
+	  }
     }
 }
