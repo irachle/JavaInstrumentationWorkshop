@@ -14,7 +14,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "git clone https://github.com/irachle/JavaInstrumentationWorkshop.git && java -version && mvn -v && git --version",
+	"postCreateCommand": "java -version && mvn -v && git --version",
 
 
 	// Configure tool-specific properties.
@@ -27,8 +27,5 @@
 		    "vscjava.vscode-java-pack"
 	    ]
 	  },
-    },
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+    }
 }
