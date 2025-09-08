@@ -17,13 +17,12 @@ public class LogPasswordProfiler
   {
     System.out.println("[Agent] log method was called with the message " + message);
 
-    String lowerMessage = message.toLowerCase();
+    String lowerMessage = (message == null) ? "" : message.toLowerCase();
     for (String indicator : PASSWORD_INDICATORS)
     {
       if (lowerMessage.contains(indicator))
       {
-        System.out.println("[Agent] log message contains password: " +
-                message.substring(lowerMessage.indexOf(indicator)));
+        System.out.println("[Agent] log message contains password indicator: " + indicator);
         break;
       }
     }
